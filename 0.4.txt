@@ -1,0 +1,16 @@
+Browser->Server: HTTP POST /exampleapp/new_note
+Server --> Browser: 302 Redirect /exampleapp/notes
+
+Browser->Server: HTTP GET /exampleapp/notes
+Server --> Browser: HTML
+
+Browser -> Server: HTTP GET /exampleapp/main.js
+Server --> Browser: Javascript
+
+Browser -> Server: HTTP GET /exampleapp/main.css
+Server --> Browser: CSS
+
+note over Browser: Execute Javascript
+
+Browser -> Server: HTTP GET /exampleapp/data.json
+Server --> Browser: JSON notes
