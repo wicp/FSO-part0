@@ -1,0 +1,13 @@
+Browser->Server: HTTP GET /exampleapp/spa
+Server --> Browser: HTML
+
+Browser -> Server: HTTP GET /exampleapp/spa.js
+Server --> Browser: Javascript
+
+Browser -> Server: HTTP GET /exampleapp/main.css
+Server --> Browser: CSS
+
+note over Browser: Execute Javascript
+
+Browser -> Server: HTTP GET /exampleapp/data.json
+Server --> Browser: JSON notes
